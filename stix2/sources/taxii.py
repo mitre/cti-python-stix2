@@ -110,7 +110,7 @@ class TAXIICollectionSink(DataSink):
                 raise ValueError("The collection %s is not found on the api_root %s of this taxii server" %
                                  (collection_id, api_root_name))
 
-    def save(self, stix_obj):
+    def add(self, stix_obj):
         """
         """
         self.collection.add_objects(self.create_bundle([json.loads(str(stix_obj))]))
