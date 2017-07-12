@@ -51,7 +51,6 @@ class MemoryStore(DataStore):
                 else:
                     print("Error: json data passed to MemorySink() was found to not be validated by STIX 2 Validator")
                     print(r)
-                    self.data = {}
             elif type(stix_data) == list:
                 # stix objects are in a list
                 for stix_obj in stix_data:
