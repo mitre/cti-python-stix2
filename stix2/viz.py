@@ -15,10 +15,10 @@ def display(data, width=800, height=600):
 
     <script type="text/javascript">
     chart = $('#chart{id}')[0];
-    vizInit(chart, {"width": {width}, "height": {height}});
+    vizInit(chart, {{"width": {width}, "height": {height}}});
     vizStix({data});
     </script>
-    """.format(id=_COUNTER, data=str(data), width=width, heigh=height)
+    """.format(id=_COUNTER, data=str(data), width=width, height=height)
 
     _COUNTER += 1
     return HTML(h)
