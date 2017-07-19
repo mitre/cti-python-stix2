@@ -13,7 +13,8 @@ def display(data, width=800, height=600):
     <script type="text/javascript">
         require(["nbextensions/stix2viz/stix2viz"], function(stix2viz) {{
             chart = $('#chart{id}')[0];
-            stix2viz.vizInit(chart, {{"width": {width}, "height": {height}}});
+            stix2viz.vizInit(chart, {{"width": {width}, "height": {height},
+                "iconDir": "/nbextensions/stix2viz/icons"}});
             stix2viz.vizStix({data});
         }});
     </script>
